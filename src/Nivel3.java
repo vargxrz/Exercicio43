@@ -2,7 +2,7 @@ package src;
 
 import java.util.Scanner;
 /*
-Fácil 3 –    Faça um programa que verifique e mostre os números entre 1.000
+Fácil 3 –  Faça um programa que verifique e mostre os números entre 1.000
  e 2.000 (inclusive) que, quando divididos por 11 produzam resto igual a 2.
  */
 public class Nivel3 {

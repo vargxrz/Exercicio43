@@ -37,7 +37,7 @@ public class nivel9 {
             }
 
         }
-        porcent15 = (100 * contagem1) / ir;       //ir
+        porcent15 = (100 * contagem1) / ir;
         porcent60 = (100 * contagem5) / ir;
         float porcentSobra = (porcent15 + porcent60);
         float porcentSob = (100 - porcentSobra);

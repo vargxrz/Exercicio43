@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class nivel16 {
     public static void main(String[] args) {
 
-        int cont = 1;
+        int cont = 0;
         int idade = 0;
         float altura = 0;
         int peso = 0;
@@ -41,27 +41,28 @@ public class nivel16 {
             }
             if (idade >= 10 && idade <= 20) {
                 contagemAltura++;
-                somaAltura = altura += somaAltura;
+                somaAltura += altura;
             }
             if (peso <= 40) {
                 contagemPeso++;
-            } cont++;
+            }
+            cont++;
+        }
 
-            }
-            if (contagemIdade > 0) {
-                System.out.println("Quantidade de Pessoas com mais de 50 anos: " + contagemIdade);
-            } else {
-                System.out.println("Nenhuma pessoa tem mais de 50 anos...");
-            }
-            if (contagemAltura > 0) {
-                System.out.println("A media da altura de pessoas entre 10 e 20 anos é: " + (somaAltura / contagemAltura));
-            } else {
-                System.out.println("Nenhuma pessoa tem entre 10 e 20 anos...");
-            }
-            if (contagemPeso > 0){
-                System.out.println("Porcentagem de pessoas com menos de 40kg é " + (contagemPeso * 100 / (cont - 1) + "%" ));
-            } else {
-                System.out.println("Nenhuma pessoa tem peso menor que 40kg.");
+        if (contagemIdade > 0) {
+            System.out.println("Quantidade de Pessoas com mais de 50 anos: " + contagemIdade);
+        } else {
+            System.out.println("Nenhuma pessoa tem mais de 50 anos...");
+        }
+        if (contagemAltura > 0) {
+            System.out.println("A media da altura de pessoas entre 10 e 20 anos é: " + (somaAltura / contagemAltura));
+        } else {
+            System.out.println("Nenhuma pessoa tem entre 10 e 20 anos...");
+        }
+        if (contagemPeso > 0) {
+            System.out.println("Porcentagem de pessoas com menos de 40kg é " + ((contagemPeso * 100) / cont) + "%");
+        } else {
+            System.out.println("Nenhuma pessoa tem peso menor que 40kg.");
 
 
         }

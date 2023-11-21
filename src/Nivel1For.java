@@ -5,7 +5,7 @@ package src;
 
 import java.util.Scanner;
 
-public class Nivel1 {
+public class Nivel1For {
     public static void main(String[] args) {
  int total;
         Scanner scanner = new Scanner(System.in);

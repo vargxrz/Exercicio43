@@ -26,7 +26,7 @@ public class nivel28 {
             Scanner scanner = new Scanner(System.in);
 
             char genero = 'a';
-            while (!(genero == 'm' || genero == 'f')){
+            while (!(genero == 'm' || genero == 'f')) {
                 System.out.print("(M) masculino (F) Feminino\n" +
                         "Digite seu genero: ");
                 genero = scanner.next().charAt(0);
@@ -52,27 +52,27 @@ public class nivel28 {
             if (avaliacao == 's') {
                 contagemSim++;
             } else if (avaliacao == 'n') {
-                 contagemNao++;
-                 porcentHomemNao++;
+                contagemNao++;
+                porcentHomemNao++;
             }
 
         }
-        if (contagemSim > 0){
+        if (contagemSim > 0) {
             System.out.println("Numero de pessoas que responderam sim para avaliação do produto: " + contagemSim);
-        }else {
+        } else {
             System.out.println("Nenhuma pessoa informou que gostou do produto!");
         }
-        if (contagemNao > 0){
+        if (contagemNao > 0) {
             System.out.println("Numero de pessoas que responderam não para avaliação do produto: " + contagemNao);
         } else {
             System.out.println("Nenhuma pessoa informou que nao gostou do produto!");
         }
-        if (contagemMulher != 0){
+        if (contagemMulher != 0) {
             System.out.println("A quantidade de mulheres que gostaram do produto: " + mulherSim);
         } else {
             System.out.println("Nenhuma mulher gostou do produto!");
         }
-        if (contagemHomem != 0){
+        if (contagemHomem != 0) {
             System.out.println("A porcentagem de homens que nao gostaram do produto é: " + ((contagemHomem * 100) / porcentHomemNao) + "%");
         }
 
